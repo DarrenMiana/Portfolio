@@ -1,3 +1,9 @@
+const navLinks = document.querySelectorAll(".menu .nav-link");
+
+navLinks.forEach(link => { link.addEventListener("click", () => $('.menu-btn').click());
+
+});
+
 $(document).ready(function () {
     $(window).scroll(function () {
         if (this.scrollY > 100) {
@@ -11,5 +17,7 @@ $(document).ready(function () {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     })
+
+
 });
 
