@@ -22,7 +22,7 @@ html {
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -79,6 +79,37 @@ html {
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    text-align: center;
+    line-height: 47px;
+    border-radius: 6px;
+    height: 45px;
+    width: 42px;
+    background: #077b32;
+    bottom: 10px;
+    right: 30px;
+    color: #fff;
+    font-size: 25px;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.lols {
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
+
+
+.scroll-up-btn.lols:hover {
+    background: #07973e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Home section styles */
@@ -156,7 +187,8 @@ section .title {
 .services,
 .skills,
 .project,
-.contact {
+.contact,
+footer {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -603,6 +635,17 @@ section .title::after {
     background: none;
 }
 
+footer {
+padding: 15px 18px;
+color: #6b7280;
+font-size: 12px;
+display: flex;
+align-items: center;
+}
+
+footer .far {
+    font-size: 9px;
+}
 
 
 
